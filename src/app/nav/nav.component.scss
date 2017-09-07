@@ -1,0 +1,54 @@
+@import '~_vars.scss';
+
+a {
+  color: $ui-light-text;
+  &:hover {
+    color: $ui-light-text-hover;
+    background: #eee;
+  }
+}
+.navbar {
+  background: $ui-light-bg;
+  font-family: $halflife;
+  font-size: 0.88em;
+  color: $ui-light-text;
+  -webkit-box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  -moz-box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23) !important;
+}
+.navbar-brand {
+  font-size: 1em;
+  i {
+    color: deeppink;
+  }
+}
+.navbar-collapse {
+  position: relative;
+  white-space: nowrap;
+  border: none !important;
+  outline: none !important;
+  overflow: hidden;
+
+  &:after {
+    content: "";
+    pointer-events: none;
+    position: absolute;
+    width: 100px;
+    height: 100%;
+    top: 0; right: 0;
+    
+    background-image: -webkit-linear-gradient(right, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
+    background-image: -moz-linear-gradient(right, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
+    background-image: -ms-linear-gradient(right, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
+    background-image: -o-linear-gradient(right, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
+    background-image: linear-gradient(to left, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
+  }
+}
+.nav-item {
+}
+.navbar-user {
+  display: flex;
+  position: relative;
+  right: 0;
+  white-space: nowrap;
+}
