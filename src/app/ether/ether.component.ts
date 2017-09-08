@@ -12,4 +12,9 @@ export class EtherComponent implements OnInit {
   ngOnInit() {
   }
 
+  addItem(title: HTMLInputElement, link: HTMLInputElement): boolean {
+    console.log(`committing...\ntitle: ${title.value}\nlink: ${link.value}`);
+    return false;
+  }
+
 }

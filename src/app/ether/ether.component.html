@@ -1,8 +1,27 @@
 <div class="ether-container">
   <div class="ether">
-    <h1>wtf</h1>
-    <p>
-      ether works!
-    </p>
+    <form>
+      <h3 class="">Add content</h3>
+      <div class="form-group row">
+        <label class="col-2 col-form-label text-right" for="title">Title:</label>
+        <div class="col-10">
+          <input class="form-control" name="title" #title>
+        </div>
+      </div>
+      <div class="form-group row">
+        <label class="col-2 col-form-label text-right" for="link">Link:</label>
+        <div class="col-10">
+          <input class="form-control" name="link" #link>
+        </div>
+      </div>
+      <div class="form-group row justify-content-end">
+        <div class="submit">
+          <button (click)="addItem(title, link)"
+                  class="btn">
+            Commit
+          </button>
+        </div>
+      </div>
+    </form>
   </div>
 </div>
