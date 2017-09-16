@@ -5,12 +5,14 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { NavComponent } from './nav/nav.component';
 import { EtherComponent } from './ether/ether.component';
+import { ItemComponent } from './item/item.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavComponent,
-    EtherComponent
+    EtherComponent,
+    ItemComponent
   ],
   imports: [
     BrowserModule,

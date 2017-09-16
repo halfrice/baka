@@ -1,0 +1,109 @@
+a {
+  &:hover {
+    text-decoration: none;
+  }
+}
+.item-container {
+  border-top: 1px solid #fcfcfc;
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+  width: 96%;
+  height: 56px;
+  padding: 0;
+  -webkit-box-shadow: 0 6px 3px -3px rgba(#000,0.23);
+  -moz-box-shadow: 0 6px 3px -3px rgba(#000,0.23);
+  box-shadow: 0 6px 3px -3px rgba(#000,0.23);
+
+  &:hover {
+    cursor: pointer;
+    filter: brightness(120%);
+    -webkit-filter: brightness(120%);
+    -moz-filter: brightness(120%);
+    -o-filter: brightness(120%);
+    -ms-filter: brightness(120%);
+  }
+}
+.item-controls {
+  padding: 0;
+  margin: 0 2px 0 0;
+  width: 72px;
+  height: 56px;
+
+  .votes {
+    padding: 0; 
+    margin: 0px auto;
+    text-align: center;
+    height: 28px;
+
+  }
+
+  .vote {
+    padding: 0 3px;
+    margin: 0;
+    color: #bbb;
+    font-size: 1.5em;
+  }
+
+  .score {
+    height: 28px;
+    margin: 0px auto;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+
+    h2 {
+      padding: 0;
+      margin: 0;
+    }
+  }
+}
+
+.item-thumbnail {
+  background: #999;
+  margin: 0 2px 0 0;
+  width: 99.5px;
+  height: 56px;
+
+}
+
+.item-content {
+  // margin-left: 177.5px;
+
+  .title {
+    font-size: 16px;
+    line-height: 24px;
+    // border: 1px solid hotpink;
+    height: 19.3px;
+  }
+
+  .domain {
+    margin-left: 6px;
+    line-height: 12px;
+    color: #999;
+    font-size: 11px;
+
+  }
+}
+
+
+// UTILS
+.flip-horizontal {
+  -moz-transform: scaleX(-1);
+  -o-transform: scaleX(-1);
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+  filter: FlipH;
+  -ms-filter: "FlipH";
+}
+
+
+.left {
+  float: left;
+}
+
+.middle {
+}
+
+.right {
+  float: right;
+}

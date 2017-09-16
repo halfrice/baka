@@ -1,0 +1,26 @@
+<div class="item-container container">
+  <div class="">
+    <div class="item-controls left">
+      <div class="score">
+        <span>{{ item?.votes }}</span>
+      </div>
+      <div class="votes">
+        <a href (click)="upvote()">
+          <i class="vote fa fa-thumbs-up" aria-hidden="true"></i>
+        </a>
+        <a href (click)="downvote()">
+          <i class="vote fa fa-thumbs-down flip-horizontal" aria-hidden="true"></i>
+        </a>
+      </div>
+    </div>
+    <div class="item-thumbnail left">
+      <div class="item-thumbnail middle">
+      </div>
+    </div>
+    <div class="item-content middle">
+      <div class="title">
+        <a href="{{ item.link }}">{{ item?.title }}</a><div class="domain">({{ item.domain() }})</div>
+      </div>
+    </div>
+  </div>
+</div>
