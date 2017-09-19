@@ -3,6 +3,12 @@ a {
     text-decoration: none;
   }
 }
+
+.wtf {
+  color: deeppink;
+  background: #ddd;
+}
+
 .item-container {
   border-top: 1px solid #fcfcfc;
   border-left: 1px solid #ccc;
@@ -59,11 +65,17 @@ a {
 }
 
 .item-thumbnail {
-  background: #999;
-  margin: 0 2px 0 0;
+  background: url('../../assets/images/d.va.jpg') no-repeat center;
+  background-size: contain;
+  background-color: #fff;
+  // border: 1px solid #ccc;
+  // margin: 0 2px 0 0;
+  margin: 0px auto;
+  text-align: center;
   width: 99.5px;
-  height: 56px;
-
+  // height: 56px;
+  height: 42px;
+  z-index: -1;
 }
 
 .item-content {
